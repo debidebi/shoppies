@@ -151,7 +151,8 @@ class MovieApis extends Component {
     
     const currentShowedMovies = this.state.searchedMovies.map((movie) => {
       return (
-        <Movies          movie={movie}
+        <Movies          
+         movie={movie}
           key={movie.imdbID}
           disabled={
             isAlreadyNominated(movie) || this.state.nominatedMovies.length >= 5
@@ -165,7 +166,7 @@ class MovieApis extends Component {
     const currentNominatedMovies = this.state.nominatedMovies.map((m) => {
       return (
         < Movies          
-         movie={m.movie}
+          movie={m.movie}
           added
           small
           key={m.movie.imdbID}
@@ -183,7 +184,7 @@ class MovieApis extends Component {
             <FontAwesomeIcon icon="film" />
             <span>SHOPPIES CHALLENGE</span>
           </h1>
-          console.log('h1');
+      
           <form>
             <input
               className="form-control"
@@ -212,7 +213,7 @@ class MovieApis extends Component {
           className={[styles.NominationsSection, styles.Section].join(" ")}
         >
           <h1 className="d-none-md">
-            <i className="fas fa-video"></i>
+            <i className="fas fa-film"></i>
             <span>SHOPPIES CHALLENGE</span>
           </h1>
           <h2>Nominations ({this.state.nominatedMovies.length}/5)</h2>
