@@ -213,8 +213,8 @@ class MovieApis extends Component {
           className={[styles.NominationsSection, styles.Section].join(" ")}
         >
           <h1 className="d-none-md">
-            <i className="fas fa-film"></i>
-            <span>SHOPPIES CHALLENGE</span>
+            {/* <i className="fas fa-film"></i>
+            <span>SHOPPIES CHALLENGE</span> */}
           </h1>
           <h2>Nominations ({this.state.nominatedMovies.length}/5)</h2>
           {this.state.nominatedLoading ? (
